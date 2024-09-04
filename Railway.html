@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Railway Station Navigation</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function handleSearch(event) {
+            const searchBar = document.querySelector('.search-bar');
+            if (event.key === "Enter") {
+                if (searchBar.value.trim().toLowerCase() === "panvel") {
+                    window.location.href = "panvel.html";  
+                }
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const searchBar = document.querySelector('.search-bar');
+            searchBar.addEventListener('keydown', handleSearch);
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://www.irctc.co.in/nget/assets/images/secondry-logo.png">
+            <h1><u>Station Navigator</u></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#timeline">Services</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li>
+                    <select id="language-select">
+                        <option value="en">English</option>
+                        <option value="hi">Hindi</option>
+                        <option value="es">Spanish</option>
+                        <option value="fr">French</option>
+                    </select>
+                </li>
+                <li><img style="width: 50px; height: 80px;" src="//upload.wikimedia.org/wikipedia/commons/thumb/5/55/Emblem_of_India.svg/125px-Emblem_of_India.svg.png"></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="section welcome-section">
+        <div class="content">
+            <h2 id="wel">Welcome to the Railway Station Navigation System</h2>
+            <p>Find facilities, get real-time directions, and ensure a smooth travel experience<br>Navigate through railway stations with ease. </p>
+        </div>
+        <section class="section search-section">
+            <div class="content" id="search-bars">
+                <input type="text" class="search-bar" placeholder="Enter station name...">
+            </div>
+        </section>
+    </section>
+
+
+        <section>
+            <div id="timeline"  class="timeline-container">   
+                <img class="time" src="Timeline.jpg" alt="Timeline Image" loading="lazy">
+                <div class="circle-container" style="position: absolute; top: calc(40%); left: calc(10% - 70px);">
+                    <div class="text-overlay" style="top: -120px; left: -10px; color: #000000;">
+                        <i>Locate Facilities</i>
+                    </div>
+                    <a href="#ff" class="circle-link" style="background-color: #d6d5d9;">1</a>
+                </div>
+
+                <div class="circle-container" style="position: absolute; top: calc(40%); left: calc(30% - 74px);">
+                    <div class="text-overlay" style="top: 250px; left: -15px; color: #000000;">
+                        <i>Real-Time Navigation</i>
+                    </div>
+                    <a href="#rt" class="circle-link" style="background-color: #d6d5d9;">2</a>
+                </div>
+
+                <div class="circle-container" style="position: absolute; top: calc(40%); left: calc(50% - 70px);">
+                    <div class="text-overlay" style="top: -120px; left: -10px; color: #000000;">
+                        <i>Accessibility Support</i>
+                    </div>
+                    <a href="#as" class="circle-link" style="background-color: #d6d5d9;">3</a>
+                </div>
+
+                <div class="circle-container" style="position: absolute; top: calc(40%); left: calc(70% - 65px);">
+                    <div class="text-overlay" style="top: 250px; left: -40px; color: #000000; white-space: nowrap;">
+                        <i>Multi-Language<br> Support</i>
+                    </div>
+                    <a href="#mls" class="circle-link" style="background-color: #d6d5d9;">4</a>
+                </div>
+
+                <div class="circle-container" style="position: absolute; top: calc(40%); left: calc(90% - 74px);">
+                    <div class="text-overlay" style="top: -120px; left: -10px; color: #000000;">
+                        <i> Seamless Integration</i>
+                    </div>
+                    <a href="#si" class="circle-link" style="background-color: #d6d5d9;">5</a>
+                </div>
+                
+        </section>
+        
+
+        <section class="section info-section">
+            <div class="content">
+                <h2 id="ff">Features</h2>
+                <div class="info-points">
+                    <div class="info-point left">
+                        <h3 id="lf" >1. Locate Facilities</h3>
+                        <p>• Interactive Maps: The platform offers detailed, interactive maps of the station, showing the exact location of facilities like restrooms, ticket counters, platforms, waiting areas, food courts, and more.
+                            <br>• Facility Categories: Users can filter and search for specific types of facilities (e.g., accessible restrooms, baby care rooms, or vegetarian food options) based on their needs.
+                            <br>• Proximity Indicators: The system can indicate how far you are from a selected facility, helping you to decide the most efficient route.</p>
+                        </div>
+                            <!-- <div class="image-content">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3J54J-eqwOgabBsPlOdpRbqYI2txkv7UbKX2XQXYRlVE1wLC6k2y3krqOWbH3WbNK68E&usqp=CAU" alt="Locate Facilities">
+                            </div> --> <br><br>
+                        <div class="info-point right">
+                        <h3 id="rt">2. Real-Time Navigation</h3>
+                        <p>• Turn-by-Turn Directions: The platform offers clear, concise directions that update in real-time as you move through the station.
+                            <br>• Connection Alerts: If you’re transferring between trains, the system can &nbsp; &nbsp; alert you to changes in your connection, such as platform shifts or delays, and guide you.
+                            <br>• Congestion Avoidance: The navigation system can suggest alternative &nbsp; &nbsp; routes within the station to avoid congested areas, helping you save time and reduce stress.</p>
+                    </div><br><br>
+                    <div class="info-point left">
+                        <h3 id="as">3. Accessibility Support</h3>
+                        <p>• Accessible Routes: The system highlights paths that are wheelchair-friendly, with elevators, ramps, and accessible restrooms marked clearly.
+                            <br>• Voice Guidance: For visually impaired users, the platform offers voice-guided navigation to help them move through the station safely and efficiently.</p>
+                    </div><br><br>
+                    <div class="info-point right">
+                        <h3 id="mls">4. Multi-Language Support</h3>
+                        <p>• Multilingual Interface: Upon accessing the platform, users are prompted to select their preferred language from a list of available options. The platform then adjusts its interface, displaying all menus, instructions, and information in the chosen language.
+                            <br>• Language Customization: The system allows users to change their language preference at any time during their journey. This flexibility is useful for bilingual travelers or in cases where users need to switch between languages for any reason.</p>
+                    </div><br><br>
+                    <div class="info-point left">
+                        <h3 id="si">5. Seamless Integration</h3>
+                        <p>• Integrate our navigation system with existing railway apps for a smooth, unified travel experience.
+                            <br>• Ticket Integration: The navigation system can integrate with your digital train tickets, automatically setting up navigation from your arrival point to your departure platform.
+                            <br>• Real-Time Updates: The system pulls real-time data from the railway's service updates, offering you the latest information on train schedules, platform changes, and delays.
+                            <br>• Cross-App Functionality: If you are using multiple railway-related apps (like ticketing, loyalty programs, or customer service), this system can work alongside them, providing a seamless transition between apps without the need to input your data multiple times.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+
+        <footer>
+            <p>&copy; 2024 Railway Navigation. All rights reserved.</p>
+        </footer>
+    </body>
+    </html>
