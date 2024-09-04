@@ -271,15 +271,20 @@ p {
 }
 
 .search-button {
-    background-color: transparent;
+    background-color: white;
+    opacity: 50% ;
+    border-radius: 50%;
+    position: relative;
+    left: 200px;
+    top: -40px;
     border: none;
     padding: 10px;
     cursor: pointer;
 }
 
 .search-button img {
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
 }
 
 footer {
